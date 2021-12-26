@@ -4,6 +4,10 @@ Este proyecto nos permite correr comandos de node en el contenedor y ver los res
 
 # Instrucciones.
 
+Existen dos alternativas:
+
+## Construcción manual.
+
 Ejecutar:
 
 * docker build -t mynpm .
@@ -12,3 +16,9 @@ Ejecutar:
 Ejemplo:
 
 * docker run -it -v "C:\Users\alex0\Documents\Udemy\Docker and Kubernets\utility-container:/app" mynpm init
+
+## Usando docker-compose
+
+Ejecutar:
+
+* docker-compose run npm [COMANDO DE NPM]
